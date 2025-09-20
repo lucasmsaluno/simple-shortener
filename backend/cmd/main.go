@@ -117,7 +117,7 @@ func main() {
         fmt.Println("No .env file found")
     }
 
-	connStr := "postgresql://postgres:JiIzxzgljmywFvjuhmvxOTvuiBiwBXiz@switchyard.proxy.rlwy.net:42691/railway"
+	connStr := os.Getenv("DATABASE_PUBLIC_URL")
 	var err error
 	db, err = sql.Open("postgres", connStr)
 	if err != nil {

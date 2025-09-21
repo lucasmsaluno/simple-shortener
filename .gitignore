@@ -1,0 +1,56 @@
+# ----------------------------
+# Go
+# ----------------------------
+# Compiled binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries and outputs
+*.test
+*.out
+
+# Local build directory
+/build/
+
+# Go build cache
+/go-build/
+/*.log
+
+# Dependencies (if using vendor)
+vendor/
+
+# ----------------------------
+# Modules and packages
+# ----------------------------
+# Dependency files
+*.mod
+*.sum
+
+# ----------------------------
+# Docker
+# ----------------------------
+# Docker generated files
+*.pid
+*.tar
+*.img
+
+# ----------------------------
+# Local configuration
+# ----------------------------
+.env
+.env.local
+.env.*
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.swp
+
+# ----------------------------
+# OS specific files
+# ----------------------------
+.DS_Store
+Thumbs.db

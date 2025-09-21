@@ -1,8 +1,4 @@
-# Notes App
-<p>
-  <img src="github/simple-shortener.png" width="732"/>
-</p>
-
+# Simple Shortener
 > Status: ✅ Finished
 
 <br/>
@@ -29,30 +25,40 @@ If you want to see the project running in your browser, check it out
 
 ## ⚡Installation
 
-1. Clone this repository: 
-   ```bash
-   git clone https://github.com/lucasmsaluno/simple-shortener
-   ```
-2. Start it with live server on VSCode
-  ```bash
-   cd path/to/the/prooject live-server
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/your-username/url-shortener.git
+cd url-shortener
+
+# Build and start containers
+docker-compose up --build
+```
 <br/>
 
 ## 📂 Folder Structure
 ```bash
-notesapp/
-├── assets/                     # Static files and media
-│   └── github/                 # GIFs for README or presentation
-│       ├── notesapp.gif
-│       └── notesappmobile.gif
-├── js/                         # JavaScript files
-│   └── app.js                  # Main application logic (NotesApp)
-├── styles/                     # CSS styles
-│   └── style.css               # Main UI styling
-├── index.html                  # Home page of the application
-
-
+├── backend/                         # Backend service written in Go
+│   ├── cmd/                         # Entry point of the application
+│   │   └── main.go                  # Starts the HTTP server
+│   ├── handlers/                    # HTTP request handlers
+│   │   └── shortener.go             # Logic for shortening and redirecting URLs
+│   ├── models/                      # Database models and structs
+│   │   └── url.go                   # URL model and DB operations
+│   ├── utils/                       # Utility functions
+│   │   └── generator.go             # Generates random short codes
+│   ├── go.mod                       # Go module definition
+│   ├── go.sum                       # Dependency checksums
+│   ├── Dockerfile                   # Docker build instructions for backend
+│   └── docker-compose.yml           # Docker Compose config for services
+├── frontend/                        # Frontend files served to users
+│   ├── index.html                   # Main HTML page
+│   ├── assets/                      # Static assets
+│   │   ├── js/                      # JavaScript logic
+│   │   │   └── app.js               # Handles form and API calls
+│   │   └── styles/                  # CSS styles
+│   │       └── style.css            # Styling for the UI
+├── .gitignore                       # Git ignored files
+└── README.md    
 ```
 <br/>
 

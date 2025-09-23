@@ -40,12 +40,6 @@ docker-compose up --build
 ├── backend/                         # Backend service written in Go
 │   ├── cmd/                         # Entry point of the application
 │   │   └── main.go                  # Starts the HTTP server
-│   ├── handlers/                    # HTTP request handlers
-│   │   └── shortener.go             # Logic for shortening and redirecting URLs
-│   ├── models/                      # Database models and structs
-│   │   └── url.go                   # URL model and DB operations
-│   ├── utils/                       # Utility functions
-│   │   └── generator.go             # Generates random short codes
 │   ├── go.mod                       # Go module definition
 │   ├── go.sum                       # Dependency checksums
 │   ├── Dockerfile                   # Docker build instructions for backend

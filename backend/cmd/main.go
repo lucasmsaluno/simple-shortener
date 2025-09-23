@@ -118,7 +118,8 @@ func main() {
     }
 
 	var err error
-	db, err = sql.Open("postgres", "postgresql://postgres:JiIzxzgljmywFvjuhmvxOTvuiBiwBXiz@switchyard.proxy.rlwy.net:42691/railway")
+	connStr := os.Getenv("DATABASE_PUBLIC_URL")
+	db, err = sql.Open("postgres", connStr)
 	if err != nil {
 	    log.Fatal("Database connection error:", err)
 	}

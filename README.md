@@ -27,7 +27,7 @@ If you want to see the project running in your browser, check it out
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/url-shortener.git
+git clone https://github.com/lucasmsaluno/url-shortener.git
 cd url-shortener
 
 # Build and start containers
